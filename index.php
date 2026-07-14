@@ -1,3 +1,6 @@
 <?php
-echo "Merhaba Dünya";
+
+echo "merhaba dünya";
+echo "<br>";
+echo "merhaba php ile web programlama"
 ?>
