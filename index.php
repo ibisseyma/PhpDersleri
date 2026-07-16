@@ -1,53 +1,35 @@
+
 <?php
 
-$num1 = 34;
-$num2 = 45;
+$colors = array("red","blue","pink","green");
+print_r($colors);
+echo "<br>";   
+print_r(count($colors));
+echo "<br>"; 
 
-if($num1>$num2){
-    echo "büyük sayımız $num1 'dir";
-} else {
-    echo "büyük sayımız $num2 'dir";
-}
-$vize = 45;
-$final = 55;
-$ortalama = ($vize * 0.4)+($final * 0.6);
-if($ortalama>50){
-    echo "Dersi geçtiniz. Ortalamanız = $ortalama";
-}else{
-    echo "Dersten kaldınız. Ortalamanız = $ortalama";
-}
+$a = array("white");
+$arrayNew = array_merge($a,$colors);
+print_r($arrayNew);
+echo "<br>"; 
 
-$vize = 25;
-$final = 60;
-$ortalama = ($vize * 0.4)+($final * 0.6);
-if($ortalama>50){
-    echo "Dersi geçtiniz. Ortalamanız = $ortalama";
-}else{
-    echo "Dersten kaldınız. Ortalamanız = $ortalama";
-}
+array_pop($arrayNew);
+print_r($arrayNew);
+echo "<br>"; 
 
-$number = 65;
+array_push($arrayNew,"yellow","orange");
+print_r($arrayNew);
+echo "<br>"; 
 
-if($number % 2 == 0) {
-    echo "Sayımız çift sayıdır" ;
-}else{
-    echo "Sayımız tek sayıdır" ;
-}
+print_r(array_reverse($arrayNew));
+echo "<br>"; 
 
-$username = "Şeyma" ;
-$password = "12345" ;
+print_r(array_search("blue", $arrayNew));
+echo "<br>"; 
 
-$girilen_user = "Sıla" ;
-$girilen_parola = "12345" ;
- 
-if (($username==$girilen_user)&&($password==$girilen_parola)){
-    echo "Giriş Başarılı";
-}else{
-    echo "Giriş Başarısız";
-}
+print_r(var_dump(array_search("purple", $arrayNew)));
+echo "<br>"; 
 
-
-
-
+sort($arrayNew);
+echo implode("<br>", $arrayNew )
 
 ?>
