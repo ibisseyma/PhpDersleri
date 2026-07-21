@@ -1,6 +1,6 @@
-<?php
+<?php 
+ setcookie("isim", "seyma", time() + (60 * 60));
 
-echo "merhaba dünya";
-echo "<br>";
-echo "merhaba php ile web programlama"
+ echo $_COOKIE["isim"];
+ 
 ?>
